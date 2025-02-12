@@ -9,11 +9,11 @@ module LinkedData
       private
 
       def extract_metadata(logger, user_params, heavy_extraction: true)
-        version_info = extract_version
-        ontology_iri = extract_ontology_iri
-        @submission.version = version_info if version_info
-        @submission.uri = ontology_iri if ontology_iri
-        @submission.save
+        # version_info = extract_version
+        # ontology_iri = extract_ontology_iri
+        # @submission.version = version_info if version_info
+        # @submission.uri = ontology_iri if ontology_iri
+        # @submission.save
 
         if heavy_extraction
           begin

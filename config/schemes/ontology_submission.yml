@@ -42,7 +42,7 @@ versionIRI:
   example: 'https://w3id.org/myontology/3.2.0'
   description: [ 
     "OWL: The property that identifies the version IRI of an ontology." ]
-  extractedMetadata: true
+  extractedMetadata: false
 
 #Version information
 version:
@@ -57,7 +57,7 @@ version:
     "PAV: The version number of a resource.",
     "DOAP: A project release",
     "SCHEMA: The version of the CreativeWork embodied by a specified resource."]
-  extractedMetadata: true
+  extractedMetadata: false
   metadataMappings: [ "omv:version", "mod:version", "owl:versionInfo", "pav:version", "doap:release", "schema:version", "oboInOwl:data-version", "oboInOwl:version" ]
   
 #Status
