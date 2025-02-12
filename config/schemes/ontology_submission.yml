@@ -504,7 +504,7 @@ hasCreator:
     "DOAP: Maintainer of a project, a project leader.",
     "SCHEMA:author: The author of this content or rating.",
     "SCHEMA:creator: The creator/author of this CreativeWork." ]
-  extractedMetadata: true
+  extractedMetadata: false
   metadataMappings: [ "omv:hasCreator", "dc:creator", "dcterms:creator", "foaf:maker", "prov:wasAttributedTo", "doap:maintainer", "pav:authoredBy", "pav:createdBy", "schema:author", "schema:creator" ]
 
 #Contributor
@@ -518,7 +518,7 @@ hasContributor:
     "OMV: Contributors to the creation of the ontology.",
     "PAV: The resource was contributed to by the given agent.",
     "DOAP: Project contributor" ]
-  extractedMetadata: true
+  extractedMetadata: false
   metadataMappings: [ "omv:hasContributor", "dc:contributor", "dcterms:contributor", "doap:helper", "schema:contributor", "pav:contributedBy" ]
   
 #Curator
@@ -551,7 +551,7 @@ publisher:
     "DCTERMS: An entity responsible for making the resource available.",
     "SCHEMA: The publisher of creative work.",
     "ADMS: The name of the agency that issued the identifier." ]
-  extractedMetadata: true
+  extractedMetadata: false
   metadataMappings: [ "dc:publisher", "dcterms:publisher", "schema:publisher", "adms:schemaAgency" ]
 
 #Funded or sponsored by
