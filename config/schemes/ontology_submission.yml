@@ -305,7 +305,7 @@ description:
     "SCHEMA: A description of the item.",
     "OMV: Free text description of an ontology.",
     "DOAP: Plain text description of a project, of 2-4 sentences in length.","RDFS: A human-readable description of a resource." ]
-  extractedMetadata: true
+  extractedMetadata: false
   metadataMappings: [ "omv:description", "dc:description", "dcterms:description", "doap:description", "schema:description", "oboInOwl:remark" ]
 
 #Homepage
