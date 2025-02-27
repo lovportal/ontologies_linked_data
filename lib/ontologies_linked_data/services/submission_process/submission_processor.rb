@@ -30,10 +30,6 @@ module LinkedData
           logger.flush
           LinkedData::Parser.logger = logger
 
-          if process_archive?(options)
-            @submission.archive
-          else
-
             @submission.generate_rdf(logger, reasoning: process_reasoning?(options)) if process_rdf?(options)
 
             parsed = @submission.ready?(status: %i[rdf])
@@ -58,6 +54,11 @@ module LinkedData
             @submission.generate_metrics(logger) if process_metrics?(options)
 
             @submission.generate_diff(logger) if process_diff?(options)
+
+            if process_archive?(options)
+              @submission.archive
+            else
+              
           end
           @submission.save
           logger.info("Submission processing of #{@submission.id} completed successfully")
